@@ -1,0 +1,322 @@
+[
+  {
+    "id": "q_001",
+    "text": "Qual santo é celebrado no dia 24 de junho?",
+    "options": {
+      "A": "Santo Antônio",
+      "B": "São João",
+      "C": "São Pedro",
+      "D": "São Jorge",
+      "E": null
+    },
+    "correctOption": "B",
+    "category": "cultura_junina",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-06T06:14:27.020Z"
+  },
+  {
+    "id": "q_002",
+    "text": "Em qual região do Brasil a Festa Junina tem mais tradição?",
+    "options": {
+      "A": "Sul",
+      "B": "Sudeste",
+      "C": "Nordeste",
+      "D": "Norte",
+      "E": null
+    },
+    "correctOption": "C",
+    "category": "cultura_junina",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_003",
+    "text": "Como se chama a dança típica das festas juninas onde casais imitam um casamento caipira?",
+    "options": {
+      "A": "Forró",
+      "B": "Baião",
+      "C": "Quadrilha",
+      "D": "Xote",
+      "E": null
+    },
+    "correctOption": "C",
+    "category": "cultura_junina",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_004",
+    "text": "Em que ano o Brasil se tornou independente de Portugal?",
+    "options": {
+      "A": "1500",
+      "B": "1808",
+      "C": "1822",
+      "D": "1889",
+      "E": null
+    },
+    "correctOption": "C",
+    "category": "historia",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_005",
+    "text": "Qual é a capital do Brasil?",
+    "options": {
+      "A": "São Paulo",
+      "B": "Rio de Janeiro",
+      "C": "Brasília",
+      "D": "Salvador",
+      "E": null
+    },
+    "correctOption": "C",
+    "category": "geografia",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_006",
+    "text": "Quem proclamou a independência do Brasil?",
+    "options": {
+      "A": "Dom João VI",
+      "B": "Dom Pedro I",
+      "C": "Dom Pedro II",
+      "D": "Getúlio Vargas",
+      "E": null
+    },
+    "correctOption": "B",
+    "category": "historia",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_007",
+    "text": "Qual é o maior estado brasileiro em extensão territorial?",
+    "options": {
+      "A": "Pará",
+      "B": "Mato Grosso",
+      "C": "Amazonas",
+      "D": "Minas Gerais",
+      "E": null
+    },
+    "correctOption": "C",
+    "category": "geografia",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_008",
+    "text": "Quais são os três instrumentos do trio nordestino, base do forró tradicional?",
+    "options": {
+      "A": "Sanfona, zabumba e triângulo",
+      "B": "Violão, percussão e flauta",
+      "C": "Piano, baixo e bateria",
+      "D": "Gaita, contrabaixo e pandeiro",
+      "E": null
+    },
+    "correctOption": "A",
+    "category": "cultura_junina",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_009",
+    "text": "Em que mês é comemorado o Dia da Independência do Brasil?",
+    "options": {
+      "A": "Março",
+      "B": "Junho",
+      "C": "Setembro",
+      "D": "Novembro",
+      "E": null
+    },
+    "correctOption": "C",
+    "category": "historia",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_010",
+    "text": "Qual é o rio mais extenso do Brasil?",
+    "options": {
+      "A": "Rio São Francisco",
+      "B": "Rio Paraná",
+      "C": "Rio Amazonas",
+      "D": "Rio Tocantins",
+      "E": null
+    },
+    "correctOption": "C",
+    "category": "geografia",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_011",
+    "text": "Como se chama a capital do estado de Pernambuco?",
+    "options": {
+      "A": "Fortaleza",
+      "B": "Natal",
+      "C": "Recife",
+      "D": "Maceió",
+      "E": null
+    },
+    "correctOption": "C",
+    "category": "geografia",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_012",
+    "text": "Quem foi o primeiro presidente da República do Brasil?",
+    "options": {
+      "A": "Getúlio Vargas",
+      "B": "Floriano Peixoto",
+      "C": "Deodoro da Fonseca",
+      "D": "Epitácio Pessoa",
+      "E": null
+    },
+    "correctOption": "C",
+    "category": "historia",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_013",
+    "text": "Como se chama o prato junino feito com milho branco cozido no leite, com açúcar e canela?",
+    "options": {
+      "A": "Pamonha",
+      "B": "Curau",
+      "C": "Canjica",
+      "D": "Xerém",
+      "E": null
+    },
+    "correctOption": "C",
+    "category": "cultura_junina",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_014",
+    "text": "Qual é a bebida quente tradicional das festas juninas, feita com gengibre, canela e cachaça?",
+    "options": {
+      "A": "Caipirinha",
+      "B": "Quentão",
+      "C": "Vinho quente",
+      "D": "Licor de jenipapo",
+      "E": null
+    },
+    "correctOption": "B",
+    "category": "cultura_junina",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_015",
+    "text": "Em qual estado brasileiro fica a cidade de Salvador?",
+    "options": {
+      "A": "Sergipe",
+      "B": "Alagoas",
+      "C": "Bahia",
+      "D": "Pernambuco",
+      "E": null
+    },
+    "correctOption": "C",
+    "category": "geografia",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_016",
+    "text": "Em que ano o Brasil sediou a Copa do Mundo de Futebol mais recentemente?",
+    "options": {
+      "A": "1994",
+      "B": "2006",
+      "C": "2010",
+      "D": "2014",
+      "E": null
+    },
+    "correctOption": "D",
+    "category": "geral",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_017",
+    "text": "Qual é o nome do maior estádio do Brasil?",
+    "options": {
+      "A": "Arena Corinthians",
+      "B": "Maracanã",
+      "C": "Mineirão",
+      "D": "Morumbi",
+      "E": null
+    },
+    "correctOption": "B",
+    "category": "geral",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_018",
+    "text": "Quantos estados o Brasil possui?",
+    "options": {
+      "A": "24",
+      "B": "25",
+      "C": "26",
+      "D": "28",
+      "E": null
+    },
+    "correctOption": "C",
+    "category": "geografia",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_019",
+    "text": "Qual é o maior bioma do Brasil?",
+    "options": {
+      "A": "Cerrado",
+      "B": "Caatinga",
+      "C": "Amazônia",
+      "D": "Mata Atlântica",
+      "E": null
+    },
+    "correctOption": "C",
+    "category": "geral",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "q_020",
+    "text": "Qual cidade nordestina é conhecida como a 'Capital do Forró'?",
+    "options": {
+      "A": "Fortaleza",
+      "B": "Campina Grande",
+      "C": "Caruaru",
+      "D": "Mossoró",
+      "E": null
+    },
+    "correctOption": "C",
+    "category": "cultura_junina",
+    "active": true,
+    "createdAt": "2026-06-01T00:00:00.000Z",
+    "updatedAt": "2026-06-01T00:00:00.000Z"
+  }
+]
