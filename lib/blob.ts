@@ -42,6 +42,8 @@ export async function writeQuestions(questions: Question[]): Promise<void> {
       addRandomSuffix: false,
       allowOverwrite: true,
     });
+  } else if (process.env.VERCEL) {
+    throw new Error('BLOB_READ_WRITE_TOKEN is not set — cannot write on Vercel without Blob storage');
   } else {
     localWrite('questions.json', questions);
   }
@@ -68,6 +70,8 @@ export async function writeSponsors(sponsors: Sponsor[]): Promise<void> {
       addRandomSuffix: false,
       allowOverwrite: true,
     });
+  } else if (process.env.VERCEL) {
+    throw new Error('BLOB_READ_WRITE_TOKEN is not set — cannot write on Vercel without Blob storage');
   } else {
     localWrite('sponsors.json', sponsors);
   }

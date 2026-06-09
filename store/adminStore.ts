@@ -45,6 +45,10 @@ export const useAdminStore = create<AdminState>((set) => ({
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
     });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({ error: 'Unknown error' }));
+      throw new Error(err.error ?? `HTTP ${res.status}`);
+    }
     const updated = await res.json();
     set((s) => ({
       questions: s.questions.map((q) => (q.id === id ? updated : q)),
@@ -78,6 +82,10 @@ export const useAdminStore = create<AdminState>((set) => ({
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
     });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({ error: 'Unknown error' }));
+      throw new Error(err.error ?? `HTTP ${res.status}`);
+    }
     const updated = await res.json();
     set((s) => ({
       sponsors: s.sponsors.map((sp) => (sp.id === id ? updated : sp)),
