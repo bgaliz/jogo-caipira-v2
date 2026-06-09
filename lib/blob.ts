@@ -29,6 +29,7 @@ export async function readQuestions(): Promise<Question[]> {
       (a, b) => new Date(b.uploadedAt).getTime() - new Date(a.uploadedAt).getTime()
     );
     const res = await fetch(sorted[0].url, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`Blob fetch failed: ${res.status} ${res.statusText}`);
     return res.json();
   }
   return localRead<Question[]>('questions.json', []);
@@ -57,6 +58,7 @@ export async function readSponsors(): Promise<Sponsor[]> {
       (a, b) => new Date(b.uploadedAt).getTime() - new Date(a.uploadedAt).getTime()
     );
     const res = await fetch(sorted[0].url, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`Blob fetch failed: ${res.status} ${res.statusText}`);
     return res.json();
   }
   return localRead<Sponsor[]>('sponsors.json', []);

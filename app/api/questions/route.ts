@@ -3,8 +3,16 @@ import { readQuestions, writeQuestions } from '@/lib/blob';
 import type { Question } from '@/lib/types';
 
 export async function GET() {
-  const questions = await readQuestions();
-  return NextResponse.json(questions);
+  try {
+    const questions = await readQuestions();
+    return NextResponse.json(questions);
+  } catch (err) {
+    console.error('[GET /api/questions]', err);
+    return NextResponse.json(
+      { error: err instanceof Error ? err.message : 'Internal server error' },
+      { status: 500 }
+    );
+  }
 }
 
 export async function POST(request: Request) {
