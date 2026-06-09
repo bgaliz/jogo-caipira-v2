@@ -23,14 +23,19 @@ function localWrite(filename: string, data: unknown): void {
 
 export async function readQuestions(): Promise<Question[]> {
   if (useBlob()) {
-    const { blobs } = await list({ prefix: 'pds/questions.json' });
-    if (blobs.length === 0) return [];
-    const sorted = blobs.sort(
-      (a, b) => new Date(b.uploadedAt).getTime() - new Date(a.uploadedAt).getTime()
-    );
-    const res = await fetch(sorted[0].url, { cache: 'no-store' });
-    if (!res.ok) throw new Error(`Blob fetch failed: ${res.status} ${res.statusText}`);
-    return res.json();
+    try {
+      const { blobs } = await list({ prefix: 'pds/questions.json' });
+      if (blobs.length === 0) return localRead<Question[]>('questions.json', []);
+      const sorted = blobs.sort(
+        (a, b) => new Date(b.uploadedAt).getTime() - new Date(a.uploadedAt).getTime()
+      );
+      const res = await fetch(sorted[0].url, { cache: 'no-store' });
+      if (!res.ok) throw new Error(`Blob fetch failed: ${res.status} ${res.statusText}`);
+      return res.json();
+    } catch (err) {
+      console.error('[readQuestions] blob failed, falling back to local:', err);
+      return localRead<Question[]>('questions.json', []);
+    }
   }
   return localRead<Question[]>('questions.json', []);
 }
@@ -52,14 +57,19 @@ export async function writeQuestions(questions: Question[]): Promise<void> {
 
 export async function readSponsors(): Promise<Sponsor[]> {
   if (useBlob()) {
-    const { blobs } = await list({ prefix: 'pds/sponsors.json' });
-    if (blobs.length === 0) return [];
-    const sorted = blobs.sort(
-      (a, b) => new Date(b.uploadedAt).getTime() - new Date(a.uploadedAt).getTime()
-    );
-    const res = await fetch(sorted[0].url, { cache: 'no-store' });
-    if (!res.ok) throw new Error(`Blob fetch failed: ${res.status} ${res.statusText}`);
-    return res.json();
+    try {
+      const { blobs } = await list({ prefix: 'pds/sponsors.json' });
+      if (blobs.length === 0) return localRead<Sponsor[]>('sponsors.json', []);
+      const sorted = blobs.sort(
+        (a, b) => new Date(b.uploadedAt).getTime() - new Date(a.uploadedAt).getTime()
+      );
+      const res = await fetch(sorted[0].url, { cache: 'no-store' });
+      if (!res.ok) throw new Error(`Blob fetch failed: ${res.status} ${res.statusText}`);
+      return res.json();
+    } catch (err) {
+      console.error('[readSponsors] blob failed, falling back to local:', err);
+      return localRead<Sponsor[]>('sponsors.json', []);
+    }
   }
   return localRead<Sponsor[]>('sponsors.json', []);
 }

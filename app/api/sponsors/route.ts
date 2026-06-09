@@ -3,8 +3,16 @@ import { readSponsors, writeSponsors } from '@/lib/blob';
 import type { Sponsor } from '@/lib/types';
 
 export async function GET() {
-  const sponsors = await readSponsors();
-  return NextResponse.json(sponsors);
+  try {
+    const sponsors = await readSponsors();
+    return NextResponse.json(sponsors);
+  } catch (err) {
+    console.error('[GET /api/sponsors]', err);
+    return NextResponse.json(
+      { error: err instanceof Error ? err.message : 'Internal server error' },
+      { status: 500 }
+    );
+  }
 }
 
 export async function POST(request: Request) {
